@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #F2A2B8;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #8498B0;
+}
+h3 {
+    color: #8498B0;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+h4{
+    color: #000000;
+    font-style: normal;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* MAIN */
+main{
+    background: linear-gradient(180deg, #FEE1E3 0%, #BEB9CF 100%);
+}
+
+/* ********************** MOBILE ******************* */
+@media (max-width: 576px) {
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 16px;
+    }
+
+    /* HOME */
+    
+    #home{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 80vh 20vh;
+        width: 100%;
+    }
+    
+    #home .imagenHome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home .imagenHome img{
+        width: 100%;
+    }
+    #home .spotify{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .textSpotify{
+        margin: 8px 8px 10px 16px;
+        color: #000000;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .spotifyPlay{
+        width: 20%;
+        height: 80px;
+        margin: 8px 16px 10px 0px;
+    }
+    /* ABOUT ME */
+    .aboutFlex{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+    }
+    
+    .imagenAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagenAbout img {
+        width: 60%;
+    }
+    .textAboutMe{
+        color: #000000;
+        width: 80%;
+        margin-left: 10%;
+        font-style: normal;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif;
+    }
+    /* projects */
+    .project{
+        display: grid;
+        grid-template-areas: "projectOne" "projectTwo" "projectThree";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    
+    .projectOne{
+        grid-area: projectOne;
+        }
+    
+    .projectTwo{
+        grid-area: projectTwo;
+    }
+    
+    .projectThree{
+        grid-area: projectThree;
+    }
+    
+    .projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding: 5px 16px;
+    }
+    
+    .projects p{
+        margin-top: 20px;
+    }
+    
+    .projects img{
+        border-radius: 20%;
+    }
+    
+    .projects a {
+        text-decoration: none;
+        color: #000000;
+    }
+    /*Section Resume*/
+    .secttionThree{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .university{
+        color: #000000;
+        font-style: normal;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif;
+        padding-top: 10px;
+        padding-bottom: 3px;
+    }
+    .titule{
+        color: #000000;
+        font-style: italic;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 3px;
+        margin: 0px 16px;
+    }
+    .date{
+        color: #000000;
+        font-style: normal;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif; 
+        padding-bottom: 5px; 
+    }
+    .studiesTwo{
+        padding-bottom: 100px;
+    }
+    /*Section Skills*/
+    .otherSkills{
+        padding-bottom: 100px;
+    }
+    .lastContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 16px;
+    }
+}
+
+
+
+@media (min-width: 577px) and (max-width: 1440px) {
+    
+    /* HEADER */
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    li{
+        margin: 0px 20px;
+    }
+
+    .navbar-center {
+        position: absolute;
+        left: 45%;
+        transform: translatex(-50%);
+    }
+    
+    /*Section Home*/
+    
+    #home{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 80vh 20vh;
+        grid-gap: 50px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    #home .imagenHome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home .imagenHome img{
+        padding-top: 100px;
+        width: 65%;
+    }
+    #home .spotify{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .textSpotify{
+        padding-top: 5px;
+        color: #000000;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif;
+        margin-right: 10px;
+    }
+    .spotifyPlay{
+        width: 20%;
+        height: 80px;
+        margin-top: 6px;
+    }
+    /* ABOUT ME */
+    .aboutFlex{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        margin-left: 10%;
+    }
+    
+    .imagenAbout{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .textAboutMe{
+        color: #000000;
+        padding: 20px;
+        width: 80%;
+        font-style: normal;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.3;
+        font-family: 'Lato', sans-serif;
+    }
+    /*Section Porjects*/
+    .sectionTwo{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .project{
+        display: grid;
+        grid-template-areas: "projectOne projectTwo projectThree";
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .projectOne{
+        grid-area: projectOne;
+        }
+    
+    .projectTwo{
+        grid-area: projectTwo;
+    }
+    
+    .projectThree{
+        grid-area: projectThree;
+    }
+    
+    .projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    
+    .projects p{
+        margin-top: 20px;
+    }
+    
+    .projects img{
+        border-radius: 20%;
+    }
+    
+    .projects a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    
+    /*Section Resume*/
+    .secttionThree{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .university{
+        color: #000000;
+        font-style: normal;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.3;
+        margin-left: 40%;
+        font-family: 'Lato', sans-serif;
+        padding-top: 10px;
+        padding-bottom: 3px;
+    }
+    .titule{
+        color: #000000;
+        font-style: italic;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.3;
+        margin-left: 40%;
+        font-family: 'Lato', sans-serif;
+        padding-bottom: 3px;
+    }
+    .date{
+        color: #000000;
+        font-style: normal;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 1.3;
+        margin-left: 40%;
+        font-family: 'Lato', sans-serif; 
+        padding-bottom: 5px; 
+    }
+    .studiesTwo{
+        padding-bottom: 100px;
+    }
+    /*Section Skills*/
+    .otherSkills{
+        padding-bottom: 100px;
+    }
+    
+
+}
+
+/*Section Contact*/
+.lastContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageLin{
+    color: #000000;
+    font-style: normal;
+    font-size: 28px;
+    text-align: justify;
+    line-height: 1.3;
+    margin-left: 40%;
+    font-family: 'Lato', sans-serif; 
+    padding-bottom: 5px; 
+}
+
+.lastLin img{
+    width: 10%;
+}
+
+.mail{
+    color: #000000;
+    font-style: normal;
+    font-size: 28px;
+    text-align: justify;
+    line-height: 1.3;
+    margin-left: 40%;
+    font-family: 'Lato', sans-serif; 
+    padding-bottom: 5px; 
+}
+/*Footer*/
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(0deg, #BEB9CF, #BEB9CF);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+
+
+/* *************************  PROYECTOS ********************** */
+
+.mainProject{
+    height: 100vh;
+}
