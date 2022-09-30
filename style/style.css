@@ -120,46 +120,7 @@ main{
     
     .projectOne{
         grid-area: projectOne;
-        background-color: transparent;
-        width: 300px;
-        height: 200px;
-        border: 1px solid #f1f1f1;
-        perspective: 1000px; 
         }
-    
-    .projectOne1{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;  
-    }
-    
-    .projectOne:hoover .projectOne1{
-        transform: rotateY(180deg);
-    }
-
-   .projectOne2, .projectOne3{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    }
-
-    .projectOne2{
-        background-color: #bbb;
-        color: black; 
-    }
-
-    .projectOne3{
-        background-color: dodgerblue;
-        color: white;
-        transform: rotateY(180deg);
-    }
-
-
     
     .projectTwo{
         grid-area: projectTwo;
@@ -190,6 +151,8 @@ main{
         text-decoration: none;
         color: #000000;
     }
+
+
     /*Section Resume*/
     .secttionThree{
         padding-top: 100px;
@@ -324,7 +287,9 @@ main{
         line-height: 1.3;
         font-family: 'Lato', sans-serif;
     }
-    /*Section Porjects*/
+
+
+    /*Section Projects*/
     .sectionTwo{
         padding-top: 100px;
         padding-bottom: 100px;
@@ -348,17 +313,21 @@ main{
     .projectThree{
         grid-area: projectThree;
     }
+
+    .projectThree a img{
+        height: 100%;
+    }
     
     .projects{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 5px 20px;
+        padding:0px 10px;
     }
     
     .projects p{
-        margin-top: 20px;
+        margin-top: 10px;
     }
     
     .projects img{
@@ -369,8 +338,48 @@ main{
         text-decoration: none;
         color: #000000;
     }
+
+    /* Animacion */
+    .flipCard {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        border-radius: 20%;
+    }
+
+    .flipCardInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    .flipCard:hover .flipCardInner {
+        transform: rotateY(180deg);
+    }
+    .flipCardFront, .flipCardBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    .flipCardFront {
+        background-color: #bbb;
+        color: black;
+        border-radius: 20%;
+    }
+    .flipCardBack {
+        background-color: #8498B0;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 20%;
+    }
     
-    
+
     /*Section Resume*/
     .secttionThree{
         padding-top: 100px;
